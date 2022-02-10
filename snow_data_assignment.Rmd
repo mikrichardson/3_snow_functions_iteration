@@ -8,7 +8,7 @@ knit: (function(input, ...) {
     rmarkdown::render(
       input,
       output_file = 'index',
-      output_dir='../'
+      output_dir='../3_snow_functions_iteration'
     )
   })
 ---
@@ -55,7 +55,6 @@ file_names <- paste0('data/',dataset)
 3. Write a custom function to read in the data and append a site column to the data. 
 
 ```{r, message = F}
-
 # this code grabs the variable names from the metadata pdf file
 library(pdftools)
 headers <- pdf_text('https://snowstudies.org/wp-content/uploads/2022/02/Serially-Complete-Metadata-text08.pdf') %>%
