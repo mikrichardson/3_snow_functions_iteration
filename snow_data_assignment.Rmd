@@ -3,6 +3,14 @@ title: "Snow Data Assignment: Web Scraping, Functions, and Iteration"
 author: "Mikaela Richardson"
 date: "2-10-2022"
 output: html_document
+
+knit: (function(input, ...) {
+    rmarkdown::render(
+      input,
+      output_file = 'index',
+      output_dir='../'
+    )
+  })
 ---
 
 ```{r setup, include=FALSE}
